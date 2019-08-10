@@ -151,7 +151,7 @@ public class Server {
         ServerSocket serverSocket = new ServerSocket(3002);
         new Thread(new Servertools()).start();
         while (true) {
-            System.out.println("等待连接中");
+            System.out.println("等待连接中1");
             Socket s = serverSocket.accept();
             System.out.println("端口号为" + s.getPort() + "连接成功");
             new Thread(new ServerWrite(s)).start();
